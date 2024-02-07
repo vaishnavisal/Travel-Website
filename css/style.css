@@ -1,0 +1,766 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+/* #############################utility classes################## */
+
+.lg-heading {
+  font-size: 3.5rem;
+}
+.md-heading {
+  font-size: 2.2rem;
+}
+
+.bg-dark{
+  background-color: #263238;
+}
+
+.text-red {
+  color: #e63946;
+}
+.text-black {
+  color: #3333;
+}
+
+.text-light {
+  color: #f4f4f4f4;
+}
+.text-gray {
+  color: #555555;
+}
+
+.navbar a:link,
+.navbar a.visited {
+  color: #f4f4f4f4;
+}
+
+/* ####################utlity classes############# */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+  /* --- 16px=100%
+  ---((10px/16)*10)#### */
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 3.5rem;
+  padding-right:2rem ;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em; /* 50% of p & li font size means */
+  letter-spacing: 0.15em;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.15em;
+  font-weight: 500; /*medium*/
+  margin-bottom: 0.5em; /* if h1 is 32 px than margin bottom would be 12px*/
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background: url("../img/header-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(61, 36, 5);
+}
+
+
+
+ .logo {
+  float: left;
+  font-size: 3.5rem;
+  padding-top: 2rem;
+}
+ .navbar .nav-items {
+  float: right;
+  margin-top: 1rem;
+}
+
+ .logo,
+ .navbar a {
+  color: white;
+}
+
+ .nav-item {
+  display: inline-block;
+}
+
+.navbar .nav-item,
+h1 {
+  color: white;
+}
+.navbar a:hover {
+  border-bottom: 1px solid #f4f4f4f4;
+}
+.navbar a {
+  padding-bottom: 0.3rem;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-content{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  linear-gradient:rgba(0,0,0,0.2)rgba(0,0,0,0.2);
+}
+
+.header-content h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header-content p {
+    text-transform: uppercase;
+
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
+ .btn-primary {
+  background-color: white;
+  color: #e63946;
+  border-radius: 10em;
+}
+
+ .btn-primary:hover{
+  background-color: #ddd;
+ 
+}
+ .btn-secondary:hover{
+  background-color: #ddd;
+ 
+}
+
+/* #########################SHOWCASE SECTION STYLE############ */
+.showcase{
+  background-color: #ddd;
+  padding: 10rem 0;;
+}
+
+.row{
+  height:180px;
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1{
+  margin-bottom: 10rem;
+}
+
+.row1 .imgbox , .row2 .textbox{
+  float: left;
+
+  width: 50%;
+
+}
+.row2 .imgbox , .row1 .textbox{
+  float: right;
+  width: 50%;
+
+}
+
+.row .imgbox {
+      height: 100%;
+}
+.row .textbox {
+ font-size: 2.5rem;
+  padding: 5em;
+  line-height: 4rem;
+  letter-spacing: 2em;
+
+}
+
+.row .imgbox img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* aspect ration would be same for responsive*/
+}
+
+.btn-secondary{
+  margin-left: 8em;
+ 
+  border:1px solid #e63946;
+  border-radius: 1.5em;
+  color: #e63946;
+  background-color: #ffff;
+}
+
+
+/* ###################feture section################ */
+
+.features{
+  padding: 10rem 0;
+}
+.box{
+    width: 33.33%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box1, .box3{
+  background-color: #263238;
+  color: white;
+}
+
+.box2{
+  color: #fff;
+  background-color: #e63946;
+}
+
+.box-wrapper::after{
+content: "";
+display: block;
+clear: both;
+box-shadow: 5px 5px 20px 2px #000000c9;
+}
+
+/* #####################footer############# */
+.footer{
+  background-color: #263238;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.social-media-link{
+  margin: 2rem;
+}
+
+/* ################about page############## */
+
+
+.about{
+  padding: 5rem 0;
+}
+
+.about-heading{
+  
+  border-bottom: 3px solid #e63946;
+}
+
+/* #########################about wrapper##################### */
+
+.about-wrapper{
+  text-align:  center;
+  margin-top: 3em ;
+}
+.about-wrapper .left{
+float: left;
+width: 50%;
+
+}
+
+.about-wrapper .right{
+float: right;
+width: 50%;
+}
+
+.about-wrapper::after{
+  content: '';
+display: block;
+clear: both;
+}
+
+
+.about-wrapper li::before{
+  content: '\2713';
+color:#e63946; 
+font-weight: bold;
+padding-right: 1rem;
+}
+
+/* ###########count styling########### */
+
+.counts{
+ 
+  margin-top: 3rem;
+}
+
+.count-items{
+  float: left;
+
+  width: 25%;
+  text-align: center;
+}
+
+.count-items span{
+  font-size: 4rem;
+  font-weight: 700;
+  color: #e63946;
+}
+
+.counts::after{
+  content: '';
+display: block;
+clear: both;
+}
+
+.count-item p{
+  font-weight: 700;
+  color: #555;
+  font-size: 1.8rem;
+}
+.cta-banner{
+  background: #e63946;
+  color: #f4f4f4f4;
+  padding: 2.5rem;
+  margin-top: 5rem;
+  box-shadow: 5px spx 10px #0000003d;
+}
+
+.cta-banner-left{
+  width: 60%;
+  float: left;
+}
+.cta-banner-right{
+float: right;
+width: 40%;
+text-align: right;
+}
+.cta-banner::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.cta-line{
+  font-weight: 700;
+  font-size: 2rem;
+ margin-top: 2rem;
+ 
+}
+
+.btn-cta{
+text-align: center;
+display: inline-block;
+font-weight: 700;
+font-size: 3rem;
+text-transform: uppercase;
+border: 1px solid white;
+padding: 0.3rem 2.5em;
+letter-spacing: 0.5rem;
+color: #f4f4f4f4;
+}
+
+/* #####################contact page################# */
+
+
+.contact-form{
+  padding: 5rem 0;
+  font-size: 2rem;
+  background: #f7f7ff;
+      /* margin-right: 64rem; */
+      
+}
+
+.contact-form::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+input{
+  width: 100%;
+}
+
+.form-button{
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  padding:0.2em 0em ;
+  text-transform: uppercase;
+  background: #e63946;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.form-wrapper{
+  float: right;
+  width: 100%;
+}
+
+.company-address{
+    float: left;
+  width: 48%;
+  background: #fff;
+  padding: 1rem;
+
+
+}
+.company-address img{
+ 
+  object-fit: right;
+  max-width: 90%;
+  min-height: 40rem;
+ 
+
+
+}
+.address-group{
+
+  margin-bottom: 3rem ;
+}
+
+.form{
+        background: #fff;
+        width: 49%;
+        float: right;
+        font-size: 1rem;
+padding: 1rem;
+
+}
+
+.form h1::after{
+  content: "";
+  display: block;
+  border: 1px solid #e63946;
+  clear: both;
+}
+
+.form-wrapper .form label::after{
+ content: "*";
+ color: #e63946;
+}
+
+
+.form label{
+  display: block;
+}
+
+.form .form input{
+padding: 0.5rem;
+width: 100%;}
+
+
+.form-group{
+  margin-bottom: 1.2rem;
+}
+
+
+.form-wrapper::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.form-wrapper .company-address{
+  background: #fff;
+  width: 49%;
+  float: left;
+  padding: 1rem;
+}
+
+.form .company-address i{
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.form .company-address h2{
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+textarea{
+  width: 100%;
+  height: 105px;
+  padding: 1rem;
+}
+
+
+.address-group svg{
+  padding-left: 0.5em;
+  /* float: left; */
+}
+
+.address-group h2{
+  padding-left: 0.5em;
+  float: left;
+}
+
+.address-headings
+{
+  float: left;
+}
+label
+{
+  font-size: 2em;
+}
+
+input {
+    width: 100%;
+    height: 13px;
+    font-size:2.5rem;
+    padding: 1rem;
+}
+
+
+/* ####################mediaQuery################ */
+
+@media (max-width:500px) {
+html{
+  font-size: 50%;
+
+}
+ ul.nav-items {
+    margin-right: 2rem;
+}
+
+navbar .nav-item, .navbar .logo{
+  float: none;
+  /* display: block; */
+  width: 100%;
+  text-align: center;
+}
+
+.btn-primary{
+  font-size: 1.5em;
+}
+
+.header-content .main-heading{
+
+  display: none;
+}
+
+.row{
+
+  height: auto;
+  width: 100%;
+}
+
+.row .imgbox,
+.row .textbox{
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.features .box{
+
+  float: none;
+  width: 100%;
+  text-align: center;
+  box-shadow: 5px 5px 20px 2px #000000c9;
+
+}
+
+
+.features .box2,
+.features .box3
+{
+
+margin-top: 7rem;
+}
+
+.box-wrapper{
+  box-shadow:none;
+
+}
+
+.form-button{
+  font-size: 1.4rem;
+  padding: 1em;
+}
+
+.row .textbox {
+    padding: 1em;
+}
+
+
+.cta-banner-left ,
+.cta-banner-right{
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+
+.form-wrapper .company-address 
+{margin-bottom: 5rem;
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+.form-wrapper .form{
+  float: none;
+  width: 100%;
+  height: auto;
+
+}
+
+.about-wrapper .left ul li {
+    
+    font-size: 1.5rem;
+}
+
+.btn-cta{
+  font-size: 1.8rem;
+  margin-top: 1em;
+}
+}
+
+@media (min-width:501px) and (max-width:768px) {
+  
+html{
+  font-size: 8px;
+
+}
+
+
+
+p{
+  font-size: 1.8rem;
+}
+
+navbar .nav-item, .navbar .logo{
+  float: none;
+  /* display: block; */
+  width: 100%;
+  text-align: center;
+}
+
+.row{
+
+  height: auto;
+  width: 100%;
+}
+
+.row .imgbox,
+.row .textbox{
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.features .box{
+
+  float: none;
+  width: 100%;
+  text-align: center;
+  box-shadow: 5px 5px 20px 2px #000000c9;
+
+}
+
+
+.features .box2,
+.features .box3
+{
+
+margin-top: 7rem;
+}
+
+.box-wrapper{
+  box-shadow:none;
+
+}
+
+.form-button{
+  font-size: 1.4rem;
+  padding: 1em;
+}
+
+.row .textbox {
+    padding: 1em;
+}
+
+
+.cta-banner-left ,
+.cta-banner-right{
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+
+.form-wrapper .company-address 
+{margin-bottom: 5rem;
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+.form-wrapper .form{
+  float: none;
+  width: 100%;
+  height: auto;
+
+}
+
+.about-wrapper .left ul li {
+    
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    font-size: 2em;
+}
+.btn-secondary {
+margin-left: 16em;}
+ ul.nav-items {
+    margin-right: 14em;
+}
+.btn-cta{
+  font-size: 1.8rem;
+  margin-top: 1em;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  html{
+    font-size: 18.25%;
+
+  }
+}
+
+@media (orientation:landscape) and (max-height: 500px){
+  .header{
+    /* height:90vmax; */
+  }
+  ul.nav-items {
+    margin-right: 12em;
+}
+}
